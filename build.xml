@@ -1,0 +1,10 @@
+<project name="lift-scripts" default="install">
+  <property environment="env"/>
+
+  <target name="install">
+		<mkdir dir="${env.HOME}/bin"/>
+		<copy todir="${env.HOME}/bin">
+      <fileset dir="bin" includes="**/*.sh"/>
+    </copy>
+  </target>
+</project>
