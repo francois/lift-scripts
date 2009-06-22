@@ -32,7 +32,7 @@ The code comes packaged into it's own entity.  To install on your machine:
 <pre><code>$ git clone git://github.com/francois/lift-scripts.git
 $ cd lift-scripts
 $ ant install
-</pre></code>
+</code></pre>
 
 The install task will symlink all binaries from bin/ to your ~/bin, minus the .sh extension.
 
