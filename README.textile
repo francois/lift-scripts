@@ -1,0 +1,41 @@
+h1. Lift Scripts
+
+This is my first foray into "Lift":http://liftweb.net/ and I thought that the command to generate a project was pretty long:
+
+<pre><code>mvn archetype:generate -U                                   \
+  -DarchetypeGroupId=net.liftweb                            \
+  -DarchetypeArtifactId=lift-archetype-basic                \
+  -DarchetypeVersion=1.0                                    \
+  -DremoteRepositories=http://scala-tools.org/repo-releases \
+  -DgroupId=$GROUP_ID                                       \
+  -DartifactId=$ARTIFACT_ID                                 \
+  -Dversion=1.0-SNAPSHOT
+</code></pre>
+
+What do programmers do?  Automate!
+
+<pre><code>$ lift gen com.mycompany twitter
+</code></pre>
+
+I also have shortcuts for starting Jetty and running the tests:
+
+<pre><code>$ lift start
+$ lift test
+</code></pre>
+
+These two are pretty minor, but this could be the beginning of something.
+
+h1. Installation
+
+The code comes packaged into it's own entity.  To install on your machine:
+
+<pre><code>$ git clone git://github.com/francois/lift-scripts.git
+$ cd lift-scripts
+$ ant install
+</pre></code>
+
+The install task will symlink all binaries from bin/ to your ~/bin, minus the .sh extension.
+
+h1. License
+
+This code is placed in the public domain.
