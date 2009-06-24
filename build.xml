@@ -3,9 +3,7 @@
 
   <target name="install">
 		<mkdir dir="${env.HOME}/bin"/>
-		<copy todir="${env.HOME}/bin">
-      <fileset dir="bin" includes="**/*.sh"/>
-      <mapper type="glob" from="*.sh" to="*"/>
-    </copy>
+    <copy file="bin/lift.sh" tofile="${env.HOME}/bin/lift"/>
+    <chmod perm="ugo+x" file="${env.HOME}/bin/lift"/>
   </target>
 </project>
